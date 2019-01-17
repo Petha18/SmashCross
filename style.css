@@ -1,0 +1,9 @@
+/*!
+Theme Name:tm7200
+Template Theme URI: http://www.srp.ucr.ac.cr/
+Author: Pedro Matarrita
+Author URI: http://www.crsmash/
+Description: Tema del proyecto del curso de desarrollo rapido
+Version: 1.0
+License: GNU General Public License v2
+*/@font-face{font-family:"BeyondTheMountains";src:url("./assets/fonts/beyond-the-mountains/BeyondTheMountains.eot");src:url("./assets/fonts/beyond-the-mountains/BeyondTheMountains.eot?#iefix") format("embedded-opentype"),url("./assets/fonts/beyond-the-mountains/BeyondTheMountains.woff") format("woff")}.titulo{font-size:50px;color:blue}body{font-family:'BeyondTheMountains';color:blue;background-color:green}
