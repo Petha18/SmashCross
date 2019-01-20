@@ -1,25 +1,49 @@
 /*!
-Theme Name:tm7200
+Theme Name : Smash Cross
 Template Theme URI: http://www.srp.ucr.ac.cr/
-Author: Pedro Matarrita
-Author URI: http://www.crsmash/
-Description: Tema del proyecto del curso de desarrollo rapido
-Version: 1.0
+Author: Pedro Matarrita & Adolfo Vargas
+Author URI: http://www.smashcross.com/
+Description: Proyecto de Desarrollo Rápido de Aplicaciones. 
+Version: 1.1
 License: GNU General Public License v2
 */
 
 @import 'fonts';
 
-@include font-face('BeyondTheMountains','BeyondTheMountains','beyond-the-mountains','serif');
+@include font-face('BeyondTheMountains', 'BeyondTheMountains', 'beyond-the-mountains', 'serif');
 
-.titulo {
-  font-size: 50px;
-  color: blue;
-}
-
-/* line 16, assets/sass/style.scss */
 body {
-	font-family: 'BeyondTheMountains';
-	color:blue;
-  	background-color: green;
+	font-family: BeyondTheMountains;
+	margin:0;
+	padding:0;
+	background: white;
 }
+
+.banner{
+	max-width: 100%;
+	max-height: 50%;
+}
+
+.slider{
+	max-width: 100%;
+}
+
+#titulo-inicio{
+	background: #030046;
+	max-height: 80%;
+	h1{
+		color: #00FFFF;
+		margin-top: 1.5%;
+		margin-left: 0px;
+	}
+}
+
+.thumbnail-noticia{
+	max-width: 100%;
+}
+
+.anuncio-home{
+	margin-top: 5%;
+	max-width: 100%;
+}
+

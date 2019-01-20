@@ -5,15 +5,19 @@ require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
 function load_assets(){
 	//carrgar bootstrap_css de primero
 	wp_enqueue_style( 'bootstrap_css', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css' );
+	// wp_enqueue_style( 'bootstrap_css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css');
 
 	//cargar el style de segundo
 	wp_enqueue_style('style', get_stylesheet_uri());
 
 	//jquery de tercero
 	wp_enqueue_script( 'jquery', 'https://code.jquery.com/jquery-3.3.1.min.js');
+	// wp_enqueue_script( 'jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js');
 
 	//bootstrap_js de cuarto
 	wp_enqueue_script( 'bootstrap_js', 'https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js');
+	// wp_enqueue_script( 'bootstrap_js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js');
+
 
 }
 
@@ -24,5 +28,3 @@ register_nav_menus( array(
 	) );
 
 
-
-?>

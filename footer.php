@@ -1,5 +1,9 @@
-<footer> <?php bloginfo('name')?></footer>
-<?php wp_footer(); ?> 
+	<footer> <?php bloginfo('name'); ?> Derechos Reservados 2019</footer>
+	<?php wp_footer(); ?>
 
-</body>
+
+	</div>
+	</body>
+
+	
 </html>
