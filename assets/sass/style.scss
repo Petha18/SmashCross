@@ -11,19 +11,353 @@ License: GNU General Public License v2
 @import 'fonts';
 
 @include font-face('BeyondTheMountains', 'BeyondTheMountains', 'beyond-the-mountains', 'serif');
+@include font-face('BebasNeue', 'BebasNeue', 'bebas-neue', 'serif');
+@include font-face('CharlesWright', 'CharlesWright', 'charles-wright', 'serif');
+@include font-face('Impact', 'Impact', 'impact', 'serif');
 
+/*Meni desplegable**************************************/
+@media (max-width: 767px) and (min-width: 300px) {
+.navbar-light .navbar-brand{
+	font-family: 'BebasNeue';
+	margin-left:3% !important; 
+	color: white !important;
+	font-size: 25pt;
+}
+.menu{
+	font-family: "CharlesWright";
+	font-style: none;
+	color: white !important;
+	font-size: 20px;
+	background-color:#000080ff;
+}
+.menu li a{
+	color: white !important;
+	margin-left:3%;
+}
+.menu li:hover{
+	color: #c200cbff;
+	background-color:black;
+	 transition-duration: 1s;
+}
+.menu li a:hover{
+	color: #fff200ff !important;
+	 transition-duration: 0.7s;
+}
+.about{
+	font-family: 'Roboto';
+	color: white;
+	background: #020025ff;
+	padding: 10%;
+}
+
+.aboutTitle{
+	font-size: 50pt !important;
+}
+.contact{
+	font-family: 'Roboto';
+	color: black;
+	padding:10%;
+}
+}
+
+@media  (min-width: 767px) {
+.menu li a{
+	color: white !important;
+	opacity: 1;
+	-webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-30deg);
+	     -o-transform: skew(-20deg);
+}
+
+.menu li{
+	width: 9rem;
+	height: 3rem;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(30deg);
+	     -o-transform: skew(20deg);
+	background-color: #000080ff;
+	text-align: center;
+	margin: 0.05rem;
+}
+
+.menu li a:hover{
+	color: #fff900ff !important;
+	transition-duration: .5s;
+
+}
+
+.menu li:hover{
+	background-color:#b80c63ff;
+	color: #fff900ff !important;
+	transition-duration: 1s;
+}
+
+.navbar-light .navbar-brand{font-size: 0px !important;}
+}
+/*****************************************************************************************************/
+
+
+/*Clases Para el header*********************/
 body {
-	font-family: BeyondTheMountains;
 	margin:0;
 	padding:0;
 	background: white;
+	overflow-x: hidden;
 }
 
 .banner{
 	max-width: 100%;
 	max-height: 50%;
+	position:relative;
 }
 
+.noborder{
+	margin:0px !important;
+	padding:0px !important;
+}
+
+
+.logo{
+	position:absolute;	
+	left: 8%;
+	bottom:1px;
+	width: 40%;
+	height: auto;
+}
+
+.menu{
+	font-family: "CharlesWright";
+	font-style: none;
+	color: white !important;
+	font-size: 20px;
+}
+
+
+.custom-toggler.navbar-toggler {
+    border-color: rgb(255,102,0);
+    margin-left: 5%;
+}
+.custom-toggler .navbar-toggler-icon {
+	margin-left: 5%;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,0, 0.7)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler:hover {
+    border-color: rgb(255,242,0);
+    transition-duration: 1s;
+}
+.custom-toggler .navbar-toggler-icon:hover {
+	transition-duration: 1s;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1,1,1, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.navbar-toggler{
+	padding:.50rem .50rem !important;
+}
+
+/********************************************************************************************************/
+
+
+
+
+/*Clases para el footer*/
+.foot{
+	font-family: 'Roboto';
+	background: #1a0519ff;
+	color: #a502a5ff;
+	font-size: 10pt;
+	padding:3rem;
+	padding-bottom:10px; 
+	//margin-top:5%;
+
+}
+
+
+
+
+/*****************************************************************************************************/
+
+/*Estilos del home*/
+#titulo-inicio{
+
+	background: #030046;
+	max-height: 80%;
+	h1{
+		font-family: 'BebasNeue' ;
+		font-weight: 200;
+		color: #00FFFF;
+		margin-top: 1.5%;
+		margin-left: 0px;
+	}
+}
+
+#titulo-noticia{
+	h3{
+		background: #030046;
+		font-family: 'Impact' ;
+		color: #00FFFF;
+		padding-left: 1%;
+	}
+}
+
+#descripcion-noticia{
+	p{
+		font-family: 'Verdana';
+		font-size: 12px;
+	}
+}
+
+#fecha{
+	font-family: 'BebasNeue';
+	font-size: 15px;
+	color: #808080;
+}
+
+#texto-guias{
+	h3{
+		font-family: 'BebasNeue';
+		display: inline;
+	}
+	p{
+		font-family: 'BebasNeue';
+		color: #808080;
+	}
+	a{
+		color: black;
+		text-decoration: none;
+
+	}
+}
+
+//CLASES/////////////////////////////////////////////////////////////////////////////////////////////
+
+/* Make the image fully responsive */
+.content{
+	margin-bottom: 5%;
+}
+
+.carousel-inner img {
+      width: 100%;
+      height: 100%;
+  }
+
+.carousel-item{
+    height: auto;
+
+} 
+
+.fondo-carousel{
+	background: rgba(black, 0.8);
+	position: absolute;
+	margin-left: -20%;
+	margin-right: -20%;
+	margin-bottom: -1.3%;
+}
+
+.marquee{
+	font-family: 'BebasNeue';
+	background-color:#440061ff;
+	color: #e8d40cff;
+	font-size: 22pt;
+}
+
+.noborder{
+	margin: 0px !important;
+	padding: 0px !important;
+}
+
+.banner{
+
+}
+
+.basic-image{
+	max-width: 100%;
+}
+
+.anuncio-home{
+	margin-top: 5%;
+	max-width: 100%;
+}
+
+.linea{
+	position: absolute;
+	max-height: 90%;
+	margin-top: -83%;
+	margin-left: 94%;
+}
+
+.titulo-notas{
+	max-width: 70%;
+	position: absolute;
+	left: 15%;
+	top: 30%;
+}
+
+.fondoAma{
+	max-width: 100%;
+	position:relative;
+}
+
+/****************************************************************************************************************/
+/*Estilos de la pagina de about*/
+
+.contact{
+	font-family: 'Roboto';
+	color: black;
+	margin-bottom: 10%;
+}
+
+	.contact h1{
+	font-family: 'Impact';
+	font-size: 100pt;
+	text-decoration: underline;
+	text-decoration-color: #00ffffff;
+	margin-bottom: 5%;
+	}
+
+	.contact p{
+	font-family: 'Roboto';
+	font-size: 15pt !important;
+	text-decoration: none;
+	}
+
+.formulario{
+	margin-top: 5%; 
+}
+
+
+.form-control.inputContact{
+	background-color: #b5bbfaff !important;
+}
+
+.about{
+	font-family: 'Roboto';
+	color: white;
+	background: #020025ff;
+	padding-bottom: 8%;
+}
+
+	.aboutTitle{
+	font-family: 'Impact';
+	font-size: 100pt;
+	text-decoration: underline;
+	text-decoration-color: #00ffffff;
+	margin-top: 8%;
+	margin-bottom: 5%;
+	}
+
+	.aboutImage{
+
+	}
+	.aboutParrafo{
+		font-size:15pt !important;
+		margin-top: 4%;
+		margin-bottom: 4%;
+	}
+
+
+/********************************************************************/
 .slider{
 	max-width: 100%;
 }
@@ -45,5 +379,12 @@ body {
 .anuncio-home{
 	margin-top: 5%;
 	max-width: 100%;
+}
+
+.marquee{
+	font-family: BebasNeue;
+	background-color:#440061ff;
+	color: #e8d40cff;
+	font-size: 22pt;
 }
 
