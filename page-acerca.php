@@ -15,6 +15,10 @@
 						<div class="col-md-2 col-sm-2"><p>Message:</p></div>
 						<div class="col-md-10 col-sm-10"><textarea class="form-control inputContact" id="message" placeholder="Message"></textarea></div>
 					</div>	
+					<div class="row form-group">
+						<div class="col-md-4 col-sm-4"><button type="submit" class="btn btn-primary">Submit</button></div>
+						
+					</div>
 				</form>	
 			</div>
 		</div>

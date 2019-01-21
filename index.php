@@ -3,7 +3,7 @@
 
 
 <br />
-<div class="row" >
+<div class="row slider" >
 	<div class="col-md-1"></div>
   	<div class="col-md-10 ">
 <!--INICIO DEL SLIDER //////////////////////////////////////////////////////////// -->
@@ -69,12 +69,12 @@
 </div>
 
 <!-- ROW COMPLETO DE LAS NOTICIAS Y EL ANUNCIO -->
-<div class="row">
+<div class="row noticiaHome">
 	<div class="col-md-1"></div>
 	<!-- ROW DE SOLO LAS NOTICIAS DIVIDIENDOLO EN 12 SUB COLUMNAS -->
 	<div class="col-md-7" id="titulo-noticia">
 		<!-- ROW DE NOTICIA 1 -->
-		<div class="row" >
+		<div class="row noticiaHome" >
 			<div class="col-md-12"><hr /></div>
 			<div class="col-md-5">
 				<img src=<?php bloginfo('template_directory'); ?>/assets/images/noticia1.png class="basic-image">
@@ -140,7 +140,7 @@
   </div>
 </div>
 <br />
-<div class="row">
+<div class="row noticiaHome">
 	<div class="col-md-1"></div>
 	<div class="col-md-10">
 		<div class="row" id="texto-guias">
@@ -148,19 +148,19 @@
 				<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/krool.png class="basic-image">
 				<i><h3>#1.</h3></i> <h3>King K. Rool</h3></a>
 				<i><p>789 VOTOS 3.7K VISITAS</p></i>
-				<img src=<?php bloginfo('template_directory'); ?>/assets/images/linea.png class="linea">
+				<img src=<?php bloginfo('template_directory'); ?>/assets/images/linea.png class="linea slider">
 			</div>
 			<div class="col-md-3">
 				<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/chrom.png class="basic-image">
 				<i><h3>#2.</h3></i> <h3>Chrom</h3></a>
 				<i><p>699 VOTOS 2.9K VISITAS</p></i>
-				<img src=<?php bloginfo('template_directory'); ?>/assets/images/linea.png class="linea">
+				<img src=<?php bloginfo('template_directory'); ?>/assets/images/linea.png class="linea slider">
 			</div>
 			<div class="col-md-3">
-				<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/zss.png class="basic-image">
+				<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/zss.png class="basic-image ">
 				<i><h3>#3.</h3></i> <h3>Zero Suit Samus</h3></a>
 				<i><p>526 VOTOS 2.1K VISITAS</p></i>
-				<img src=<?php bloginfo('template_directory'); ?>/assets/images/linea.png class="linea">
+				<img src=<?php bloginfo('template_directory'); ?>/assets/images/linea.png class="linea slider">
 			</div>
 			<div class="col-md-3">
 				<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/kokun.png class="basic-image">

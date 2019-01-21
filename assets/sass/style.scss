@@ -16,7 +16,7 @@ License: GNU General Public License v2
 @include font-face('Impact', 'Impact', 'impact', 'serif');
 
 /*Meni desplegable**************************************/
-@media (max-width: 767px) and (min-width: 300px) {
+@media (max-width: 767px) and (min-width: 150px) {
 .navbar-light .navbar-brand{
 	font-family: 'BebasNeue';
 	margin-left:3% !important; 
@@ -58,9 +58,19 @@ License: GNU General Public License v2
 	color: black;
 	padding:10%;
 }
+
+.noticiaHome{
+	padding:10%;
+}
+
+.slider{
+	display: none;
+}
 }
 
 @media  (min-width: 767px) {
+
+
 .menu li a{
 	color: white !important;
 	opacity: 1;
@@ -178,7 +188,7 @@ body {
 
 /*****************************************************************************************************/
 
-/*Estilos del home*/
+/*Estilos del home************************************************************************************/
 #titulo-inicio{
 
 	background: #030046;
@@ -230,9 +240,7 @@ body {
 	}
 }
 
-//CLASES/////////////////////////////////////////////////////////////////////////////////////////////
 
-/* Make the image fully responsive */
 .content{
 	margin-bottom: 5%;
 }
