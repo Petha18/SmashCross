@@ -8,12 +8,12 @@
 			<div class="container formulario">
 				<form class="" action="">
 					<div class="row form-group">
-						<div class="col-md-2 col-sm-2"><p>Email Adress:</p></div>
-						<div class="col-md-10 col-sm-10"><input type="email" class="form-control inputContact" id="email" placeholder="Email"></div>
+						<div class="col-md-2 col-sm-3"><p>Email:</p></div>
+						<div class="col-md-10 col-sm-9"><input type="email" class="form-control inputContact" id="email" placeholder="Email"></div>
 					</div>
 					<div class="row form-group">
-						<div class="col-md-2 col-sm-2"><p>Message:</p></div>
-						<div class="col-md-10 col-sm-10"><textarea class="form-control inputContact" id="message" placeholder="Message"></textarea></div>
+						<div class="col-md-2 col-sm-3"><p>Message:</p></div>
+						<div class="col-md-10 col-sm-9"><textarea class="form-control inputContact" id="message" placeholder="Message"></textarea></div>
 					</div>	
 					<div class="row form-group">
 						<div class="col-md-4 col-sm-4"><button type="submit" class="btn btn-primary">Submit</button></div>
