@@ -289,10 +289,10 @@ body {
 }
 
 .linea{
-	position: absolute;
 	max-height: 90%;
 	margin-top: -83%;
-	margin-left: 94%;
+	height: 30%;
+	margin-left: 104%;
 }
 
 .titulo-notas{
@@ -378,8 +378,6 @@ body {
 	}
 }
 
-
-
 .slider{
 	max-width: 100%;
 }
@@ -392,7 +390,7 @@ body {
 		margin-top: 1.5%;
 		margin-left: 0px;
 		text-shadow: -4px 0px #FF00FF;
-		letter-spacing: 3px;
+		letter-spacing: 2px;
 	}
 }
 
@@ -407,8 +405,8 @@ body {
 
 .marquee{
 	font-family: BebasNeue;
-	background-color:#440061ff;
-	color: #e8d40cff;
+	background-color:#440061;
+	color: #e8d40c;
 	font-size: 22pt;
 }
 

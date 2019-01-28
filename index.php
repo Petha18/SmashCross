@@ -58,6 +58,8 @@
 	</div>
 <!-- FINAL DEL SLIDER //////////////////////////////////////////////////////////// -->	
 
+<!-- <img src=<?php //bloginfo('template_directory'); ?>/assets/images/slider.png class="basic-image">
+	<p>lerom upsim bla fjaig eioe wij bwij bwij bwij bwij bwijw eooolerom upsim bla fjaig eioe wij bwijw eoooupsim bla fjaig eioe wij bwijw eoooupsim bla fjaig eioe wij bwijw eoooupsim bla fjaig eioe wij bwijw eoooupsim bla fjaig eioe wij bwijw eooolerom upsim bla fjaig eioe wij bwijw eooo</p> -->
 
   </div>
 </div>
