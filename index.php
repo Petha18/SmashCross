@@ -9,10 +9,11 @@
 <!--INICIO DEL SLIDER //////////////////////////////////////////////////////////// -->
   	<div id="demo" class="carousel slide" data-ride="carousel">
 	  <!-- Indicators -->
-	  <ul class="carousel-indicators">
+	  <ul class="carousel-indicators lineas-explorar">
 	    <li data-target="#demo" data-slide-to="0" class="active"></li>
 	    <li data-target="#demo" data-slide-to="1"></li>
 	    <li data-target="#demo" data-slide-to="2"></li>
+	    <li data-target="#demo" data-slide-to="3"></li>
 	  </ul>
 
 	  <!-- The slideshow -->
@@ -38,6 +39,13 @@
 	        <p>Nintendo ha anunciado su declaración sobre los proximos integrantes</p>
 	      </div>   
 	    </div>
+	    <div class="carousel-item">
+	      <img src=<?php bloginfo('template_directory'); ?>/assets/images/slider2.png alt="Slider 4">
+	      <div class="carousel-caption fondo-carousel">
+	        <h3>CUARTO SLIDER </h3>
+	        <p> Probando como se pone el cuarto slider reutilizando una imagen</p>
+	      </div>   
+	    </div>
 	  </div>
 
 	  <!-- Left and right controls -->
@@ -50,8 +58,6 @@
 	</div>
 <!-- FINAL DEL SLIDER //////////////////////////////////////////////////////////// -->	
 
-<!-- <img src=<?php //bloginfo('template_directory'); ?>/assets/images/slider.png class="basic-image">
-	<p>lerom upsim bla fjaig eioe wij bwij bwij bwij bwij bwijw eooolerom upsim bla fjaig eioe wij bwijw eoooupsim bla fjaig eioe wij bwijw eoooupsim bla fjaig eioe wij bwijw eoooupsim bla fjaig eioe wij bwijw eoooupsim bla fjaig eioe wij bwijw eooolerom upsim bla fjaig eioe wij bwijw eooo</p> -->
 
   </div>
 </div>

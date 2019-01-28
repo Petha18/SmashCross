@@ -251,7 +251,7 @@ body {
   }
 
 .carousel-item{
-    height: auto;
+    height: 70%;
 
 } 
 
@@ -366,6 +366,20 @@ body {
 
 
 /********************************************************************/
+
+.lineas-explorar{
+	margin-left: 0%;
+	margin-right: 0%;
+	li{
+
+		width: 50%;
+
+
+	}
+}
+
+
+
 .slider{
 	max-width: 100%;
 }
@@ -377,6 +391,8 @@ body {
 		color: #00FFFF;
 		margin-top: 1.5%;
 		margin-left: 0px;
+		text-shadow: -4px 0px #FF00FF;
+		letter-spacing: 3px;
 	}
 }
 
