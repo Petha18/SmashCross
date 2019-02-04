@@ -1,5 +1,4 @@
-
-	
+	<?php wp_footer(); ?>
 	<footer class="container-fluid foot">
 		<div class="row">
 			<div class="col-md-7 col-sm-7">
@@ -16,7 +15,7 @@
 			</div> 
 		</div>
 	</footer>
-	<?php wp_footer(); ?>
+	
 	</body>
 
 	

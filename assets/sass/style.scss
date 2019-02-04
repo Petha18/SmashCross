@@ -14,6 +14,80 @@ License: GNU General Public License v2
 @include font-face('BebasNeue', 'BebasNeue', 'bebas-neue', 'serif');
 @include font-face('CharlesWright', 'CharlesWright', 'charles-wright', 'serif');
 @include font-face('Impact', 'Impact', 'impact', 'serif');
+@include font-face('Quantrum', 'Quantrum', 'quantrum', 'serif');
+
+/*Element First Media Queries********************************/
+
+// A map of breakpoints.
+$breakpoints: (
+  phone-sm: 420px,
+  phone: 767px,
+  tablet: 768px,
+  tablet-lg: 1024px,
+  desktop: 1025px,
+  desktop-lg: 1600px
+  );
+
+@mixin for-size($breakpoint) {
+
+// If the breakpoint exists in the map.
+@if map-has-key($breakpoints, $breakpoint) {
+
+// Get the breakpoint value.
+$breakpoint-value: map-get($breakpoints, $breakpoint);
+
+//Build the media query
+  @media (max-width: $breakpoint-value) {
+    @content;
+  }
+ } 
+}
+
+
+.nopage{
+	@include for-size(tablet-lg) {
+		.size-titulo{
+			font-size: 4rem !important;
+		}
+		img{
+				max-width: 100%;
+				max-height: auto;
+			}
+		
+	}
+	@include for-size(phone) {
+		.size-titulo{
+			font-size: 2rem !important;
+		}
+		h3{
+			font-size: 1rem !important;
+		}
+		img{
+			display: inline-block;
+				max-width: 50%;
+				max-height: auto;
+			}
+		
+	}
+	@include for-size(phone-sm) {
+		.size-titulo{
+			font-size: 2.5rem !important;
+		}
+		h3{
+			font-size: 1.2rem !important;
+		}
+		img{
+				max-width: 50%;
+				max-height: auto;
+			}
+	}
+	
+}
+
+
+
+/*Prueba de responsividad con metodo nuevo*****************************/
+
 
 /*Meni desplegable**************************************/
 @media (max-width: 767px) and (min-width: 150px) {
@@ -36,12 +110,12 @@ License: GNU General Public License v2
 }
 .menu li:hover{
 	color: #c200cbff;
-	background-color:black;
-	 transition-duration: 1s;
+	background-color: black;
+	transition-duration: 1s;
 }
 .menu li a:hover{
 	color: #fff200ff !important;
-	 transition-duration: 0.7s;
+	transition-duration: 0.7s;
 }
 .about{
 	font-family: 'Roboto';
@@ -70,6 +144,9 @@ License: GNU General Public License v2
 
 @media  (min-width: 767px) {
 
+.margen-arriba{
+	margin-top: 2%;
+}
 
 .menu li a{
 	color: white !important;
@@ -91,14 +168,13 @@ License: GNU General Public License v2
 }
 
 .menu li a:hover{
-	color: #fff900ff !important;
+	color: white !important;
 	transition-duration: .5s;
 
 }
 
 .menu li:hover{
-	background-color:#b80c63ff;
-	color: #fff900ff !important;
+	background-color: #0000FF !important;
 	transition-duration: 1s;
 }
 
@@ -175,8 +251,8 @@ body {
 .foot{
 	font-family: 'Roboto';
 	background: #1a0519ff;
-	color: #a502a5ff;
-	font-size: 10pt;
+	color: #00BFFF;
+	font-size: 12pt;
 	padding:3rem;
 	padding-bottom:10px; 
 	//margin-top:5%;
@@ -236,7 +312,6 @@ body {
 	a{
 		color: black;
 		text-decoration: none;
-
 	}
 }
 
@@ -247,13 +322,10 @@ body {
 
 .carousel-inner img {
       width: 100%;
-      height: 100%;
+      height: auto;
   }
 
-.carousel-item{
-    height: 70%;
 
-} 
 
 .fondo-carousel{
 	background: rgba(black, 0.8);
@@ -275,6 +347,12 @@ body {
 	padding: 0px !important;
 }
 
+.linea{
+	border-right-style: solid;
+	border-width: 2px;
+	border-color: #A9A9A9;
+}
+
 .banner{
 
 }
@@ -288,24 +366,23 @@ body {
 	max-width: 100%;
 }
 
-.linea{
-	max-height: 90%;
-	margin-top: -83%;
-	height: 30%;
-	margin-left: 104%;
+
+#titulo-notas{
+	font-family: 'Quantrum';
+	color: #1a0519;
+	text-shadow: 2px 2px 5px #1a0519;
+	text-align: center;
 }
 
-.titulo-notas{
-	max-width: 70%;
-	position: absolute;
-	left: 15%;
-	top: 30%;
+.fondo-notas{
+	background-image: url("assets/images/fondo-notas.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	padding-top: 6%;
+	min-height: 50%;
+	
 }
 
-.fondoAma{
-	max-width: 100%;
-	position:relative;
-}
 
 /****************************************************************************************************************/
 /*Estilos de la pagina de about*/
@@ -379,7 +456,7 @@ body {
 }
 
 .slider{
-	max-width: 100%;
+	height: auto;
 }
 
 #titulo-inicio{
@@ -409,4 +486,126 @@ body {
 	color: #e8d40c;
 	font-size: 22pt;
 }
+
+/**************************ESTILOS PAGINA DE NOTICIAS ************************************************************/
+
+.titulo-noticias{
+	h1{
+		font-family: 'Impact';
+		font-size: 6rem;
+	}
+}
+
+.input-noticia{
+	margin-top: 4%;
+}
+
+.navegador-noticias{
+	margin-top: 4%;
+		p{
+			font-size: 1.4rem !important;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+}
+
+
+/**************************ESTILOS PAGINA DE noticia sola ************************************************************/
+
+
+.banner-novedades{
+	background: #030046;
+	h1{
+		font-family: 'BebasNeue';
+		color: #00FFFF;
+		font-size: 5rem;
+		margin-top: 1%;
+	}
+}
+
+.headline-noticia{
+	h1{
+		font-family: 'Impact';
+		font-size: 4.83rem;
+
+	}
+	h4{
+		font-family: 'BebasNeue';
+		background-color: #030046;
+		display: inline;
+		color: #00FFFF;
+		margin-top: -5%;
+		padding: 0% 1% 0% 1%;
+	}
+	.autor{
+		color: #FF00FF !important;
+	}
+
+
+
+}
+
+
+#linea-azul{
+	position: absolute;
+	background-color: #030046;
+	height: 5px;
+	width: 100%;
+	margin-top: -0.4%; 
+}
+
+
+.noticia-principal{
+	width: 100%;
+}
+
+.texto-noticia{
+	p{
+		font-family: verdana;
+		font-size: 1.3rem;
+		line-height: 2.5;
+	}
+}
+
+.titulo-related{
+	background-color: rgba(#030046, 0.8);
+	margin-top: -20%;
+	color:white;
+	width: 100%;
+	position: relative;
+  	transition: height 2s;
+  	-webkit-transition: height 2s;
+  	text-align: center;
+  	overflow: hidden;
+	h2{
+		font-family: 'BebasNeue';
+		padding-left: 2%;
+		font-size: 3rem;
+	}
+	p{
+	
+		font-family: verdana;
+		line-height: 2;
+		padding-left: 2%;
+	}
+}
+
+.titulo-related:hover{
+	height: 145px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

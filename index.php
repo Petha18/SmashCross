@@ -2,8 +2,7 @@
 
 
 
-<br />
-<div class="row slider" >
+<div class="row slider margen-arriba" >
 	<div class="col-md-1"></div>
   	<div class="col-md-10 ">
 <!--INICIO DEL SLIDER //////////////////////////////////////////////////////////// -->
@@ -63,13 +62,12 @@
 
   </div>
 </div>
-<br /><br />
 
 
 
 
 <!-- TITULO DEL INICIO DE LAS NOTICIAS -->  
-<div class="row" >
+<div class="row margen-arriba" >
 	<div class="col-md-1"></div>
   	<div class="col-md-10" id="titulo-inicio">
   	<h1>RECIENTE</h1>
@@ -82,7 +80,7 @@
 	<!-- ROW DE SOLO LAS NOTICIAS DIVIDIENDOLO EN 12 SUB COLUMNAS -->
 	<div class="col-md-7" id="titulo-noticia">
 		<!-- ROW DE NOTICIA 1 -->
-		<div class="row noticiaHome" >
+		<div class="row " >
 			<div class="col-md-12"><hr /></div>
 			<div class="col-md-5">
 				<img src=<?php bloginfo('template_directory'); ?>/assets/images/noticia1.png class="basic-image">
@@ -137,40 +135,35 @@
 <!-- FIN DEL ROW DE LAS NOTICIAS Y EL ANUNCIO -->
 </div>
 
-<br /><br /><br />
 
 
 
-<div class="row" >
+<div class="row margen-arriba" >
 	<div class="col-md-1"></div>
   	<div class="col-md-10" id="titulo-inicio">
   	<h1>TOP GUIAS VERSION 1.3</h1>
   </div>
 </div>
-<br />
-<div class="row noticiaHome">
+<div class="row noticiaHome margen-arriba">
 	<div class="col-md-1"></div>
 	<div class="col-md-10">
 		<div class="row" id="texto-guias">
-			<div class="col-md-3" >
+			<div class="col-md-3 linea" >
 				<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/krool.png class="basic-image">
 				<i><h3>#1.</h3></i> <h3>King K. Rool</h3></a>
 				<i><p>789 VOTOS 3.7K VISITAS</p></i>
-				<img src=<?php bloginfo('template_directory'); ?>/assets/images/linea.png class="linea slider">
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 linea">
 				<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/chrom.png class="basic-image">
 				<i><h3>#2.</h3></i> <h3>Chrom</h3></a>
 				<i><p>699 VOTOS 2.9K VISITAS</p></i>
-				<img src=<?php bloginfo('template_directory'); ?>/assets/images/linea.png class="linea slider">
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 linea">
 				<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/zss.png class="basic-image ">
 				<i><h3>#3.</h3></i> <h3>Zero Suit Samus</h3></a>
 				<i><p>526 VOTOS 2.1K VISITAS</p></i>
-				<img src=<?php bloginfo('template_directory'); ?>/assets/images/linea.png class="linea slider">
 			</div>
-			<div class="col-md-3">
+			<div class="col-md-3 ">
 				<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/kokun.png class="basic-image">
 				<i><h3>#4.</h3></i> <h3>Kokún</h3></a>
 				<i><p>455 VOTOS 1.9K VISITAS</p></i>
@@ -179,16 +172,15 @@
 	</div>
 </div>
 
-<br /><br /><br />
 
-<div class="container-fluid content">
-	<div class="row" >
-		<div class="col-md-1"></div>
-	  	<div class="col-md-10">
-	  		<img src=<?php bloginfo('template_directory'); ?>/assets/images/fondo-notas.png class="fondoAma img-fluid">
-	  		<a href="#"><img src=<?php bloginfo('template_directory'); ?>/assets/images/titulo-notas.png class="titulo-notas img-fluid"></a>
-	  	</div>
-	  </div>
+<div class="row margen-arriba" >
+	<div class="col-md-1"></div>
+	<div class="col-md-10">
+		<div class="row fondo-notas">
+			<div class="col-md-12">
+				<a href="#" id="titulo-notas"><h2>NOTAS DE LA VERSION 1.3</h2></a>
+			</div>
+		</div>
 	</div>
 </div>
 
