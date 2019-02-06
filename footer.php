@@ -1,5 +1,5 @@
 	<?php wp_footer(); ?>
-	<footer class="container-fluid foot">
+	<footer class="container-fluid foot margen-arriba">
 		<div class="row">
 			<div class="col-md-7 col-sm-7">
 				<p><?php bloginfo('name');?></p>

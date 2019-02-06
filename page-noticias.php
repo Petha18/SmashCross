@@ -11,10 +11,10 @@
 	<div class="col-md-1"></div>
   	<div class="col-md-10" id="titulo-inicio">
   		<div class="row">
-  			<div class="col-md-8">
+  			<div class="col-md-9">
   				<h1>RECIENTE</h1>
   			</div>
-  			<div class="col-md-4">
+  			<div class="col-md-3">
   				<input class="form-control input-noticia">
   			</div>
   		</div>

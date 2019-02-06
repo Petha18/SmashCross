@@ -135,11 +135,46 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
 
 .noticiaHome{
 	padding:10%;
+
+}
+
+.anuncio-home{
+	display: none;
 }
 
 .slider{
 	display: none;
 }
+
+.linea{
+	border-color: white !important;
+
+}
+
+.banner-novedades{
+	font-size: 2rem !important;
+	text-align: center;
+}
+
+.headline-noticia{
+	padding: 5% !important;
+	h1{
+		font-size: 2rem !important;
+	}
+}
+
+.contenido-articulo{
+	padding: 5% !important;
+	p{
+		font-size: 0.8rem !important;
+	}
+}
+
+.relacionado{
+	display: none;
+}
+
+
 }
 
 @media  (min-width: 767px) {
@@ -178,7 +213,9 @@ $breakpoint-value: map-get($breakpoints, $breakpoint);
 	transition-duration: 1s;
 }
 
-.navbar-light .navbar-brand{font-size: 0px !important;}
+.navbar-light .navbar-brand{
+	font-size: 0px !important;
+}
 }
 /*****************************************************************************************************/
 
@@ -291,6 +328,7 @@ body {
 	p{
 		font-family: 'Verdana';
 		font-size: 12px;
+		line-height: 2.5;
 	}
 }
 
@@ -353,9 +391,7 @@ body {
 	border-color: #A9A9A9;
 }
 
-.banner{
 
-}
 
 .basic-image{
 	max-width: 100%;
@@ -372,6 +408,9 @@ body {
 	color: #1a0519;
 	text-shadow: 2px 2px 5px #1a0519;
 	text-align: center;
+	h2{
+		font-size: 3vw;
+	}
 }
 
 .fondo-notas{
@@ -393,19 +432,19 @@ body {
 	margin-bottom: 10%;
 }
 
-	.contact h1{
-	font-family: 'Impact';
-	font-size: 100pt;
-	text-decoration: underline;
-	text-decoration-color: #00ffffff;
-	margin-bottom: 5%;
-	}
+.contact h1{
+font-family: 'Impact';
+font-size: 100pt;
+text-decoration: underline;
+text-decoration-color: #00ffffff;
+margin-bottom: 5%;
+}
 
-	.contact p{
-	font-family: 'Roboto';
-	font-size: 15pt !important;
-	text-decoration: none;
-	}
+.contact p{
+font-family: 'Roboto';
+font-size: 15pt !important;
+text-decoration: none;
+}
 
 .formulario{
 	margin-top: 5%; 
@@ -423,23 +462,23 @@ body {
 	padding-bottom: 8%;
 }
 
-	.aboutTitle{
-	font-family: 'Impact';
-	font-size: 100pt;
-	text-decoration: underline;
-	text-decoration-color: #00ffffff;
-	margin-top: 8%;
-	margin-bottom: 5%;
-	}
+.aboutTitle{
+font-family: 'Impact';
+font-size: 100pt;
+text-decoration: underline;
+text-decoration-color: #00ffffff;
+margin-top: 8%;
+margin-bottom: 5%;
+}
 
-	.aboutImage{
+.aboutImage{
 
-	}
-	.aboutParrafo{
-		font-size:15pt !important;
-		margin-top: 4%;
-		margin-bottom: 4%;
-	}
+}
+.aboutParrafo{
+	font-size:15pt !important;
+	margin-top: 4%;
+	margin-bottom: 4%;
+}
 
 
 /********************************************************************/
@@ -511,6 +550,7 @@ body {
 }
 
 
+
 /**************************ESTILOS PAGINA DE noticia sola ************************************************************/
 
 
@@ -563,37 +603,44 @@ body {
 .texto-noticia{
 	p{
 		font-family: verdana;
-		font-size: 1.3rem;
+		font-size: 1rem;
 		line-height: 2.5;
 	}
 }
 
 .titulo-related{
 	background-color: rgba(#030046, 0.8);
-	margin-top: -20%;
+	margin-top: -19%;
 	color:white;
-	width: 100%;
+	width: auto;
+	height: 115px;
 	position: relative;
-  	transition: height 2s;
-  	-webkit-transition: height 2s;
-  	text-align: center;
-  	overflow: hidden;
+	-webkit-transition: height 2s, margin-top 2s; /* For Safari 3.1 to 6.0 */
+	transition: height 2s, margin-top 2s;
 	h2{
 		font-family: 'BebasNeue';
 		padding-left: 2%;
 		font-size: 3rem;
 	}
 	p{
-	
+		opacity: 0;
+		-webkit-transition: opacity 4s;
+		transition: opacity 4s;
 		font-family: verdana;
 		line-height: 2;
 		padding-left: 2%;
 	}
 }
 
-.titulo-related:hover{
-	height: 145px;
+.titulo-related:hover {
+	height: 224px;
+	margin-top: -38%;
+	p{
+		opacity: 1;
+	}
 }
+
+
 
 
 
