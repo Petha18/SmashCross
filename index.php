@@ -178,7 +178,7 @@
 	<div class="col-md-10">
 		<div class="row fondo-notas">
 			<div class="col-md-12">
-				<a href="#" id="titulo-notas"><h2>NOTAS DE LA VERSION 1.3</h2></a>
+				<a href="#" id="titulo-notas"><h2 class="notas">NOTAS DE LA VERSION 1.3</h2></a>
 			</div>
 		</div>
 	</div>

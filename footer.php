@@ -1,5 +1,5 @@
 	<?php wp_footer(); ?>
-	<footer class="container-fluid foot margen-arriba">
+	<footer class="container-fluid foot ">
 		<div class="row">
 			<div class="col-md-7 col-sm-7">
 				<p><?php bloginfo('name');?></p>
@@ -10,7 +10,7 @@
 				<p><a href="">Español</a>/<a href="">Inglés</a></p>
 			</div>  
 		
-			<div class="col-md-3 col-sm-2">
+			<div class="col-md-3 col-sm-5">
 				<img src=<?php bloginfo('template_directory'); ?>/assets/images/logo.png class="img-fluid">
 			</div> 
 		</div>

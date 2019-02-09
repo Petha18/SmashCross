@@ -29,8 +29,7 @@
 				<nav class="navbar navbar-expand-md navbar-light menu noborder" role="navigation">
 				  <div class="container-fluid noborder">
 				    <!-- Brand and toggle get grouped for better mobile display -->
-					<button class="toggler navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
+					<button class="custom-toggler" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-controls="bs-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
 					</button>
 					<a class="navbar-brand menuBrand" href="#">Menu</a>
 				        <?php
